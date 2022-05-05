@@ -1,0 +1,23 @@
+{
+  "name": "blanchard_emmanuel_1_code_01052022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmanuelbcd/Blanchard_Emmanuel_1_code_01052022.git"
+  },
+  "author": "Emmanuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmanuelbcd/Blanchard_Emmanuel_1_code_01052022/issues"
+  },
+  "homepage": "https://github.com/emmanuelbcd/Blanchard_Emmanuel_1_code_01052022#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1",
+    "sass": "^1.51.0"
+  }
+}
