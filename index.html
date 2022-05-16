@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS file-->
+    <link rel="stylesheet" href="css/style.css">
     <!--FontAwesome-->
-    <script src="https://kit.fontawesome.com/e1b4910b48.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Docment title-->
     <title>Ohmyfood - Accueil</title>
 </head>
@@ -14,16 +16,16 @@
     <!--Header-->
     <header class="header__heading">
         <p class="header__heading__logo">
-            <img src="img/logo/ohmyfood.png" alt="Logo de Ohmyfood!">
+            <img class="header__heading__logo__img" src="img/logo/ohmyfood.png" alt="Logo de Ohmyfood!">
         </p>
     </header>
     <!--Fin du Header-->    
     <!--Main-->
-    <main class="mainblock"></main>
+    <main class="mainblock">
         <!--Section location-->
         <div class="location">
-            <i class="fa-solid fa-location-dot"></i>
-            <p>Paris, Belleville</p>
+            <i class="fa-solid fa-location-dot locatio__icon"></i>
+            <p class="location__text">Paris, Belleville</p>
         </div>
         <!--Section choice-->
         <section class="choice">
@@ -49,7 +51,7 @@
                 </div>
                 <!--Step 3-->
                 <div class="working__step__card">
-                    <p class="working__step__card__number">2</p>
+                    <p class="working__step__card__number">3</p>
                     <i class="fa-solid fa-store working__step__card__icon"></i>
                     <p class="working__step__card__txt">Dégustez au restaurant</p>
                 </div>
@@ -62,7 +64,7 @@
                 <!--Card 1-->
                 <a href="html/la-palette-du-gout.html" class="restaurant__list__card">
                     <figure class="restaurant__list__card__image">
-                        <img src="img/restaurants/la-palette-du-gout.jpg" alt="Restaurant la palette du goût">
+                        <img class="restaurant__list__card__image__img" src="img/restaurants/la-palette-du-gout.jpg" alt="Restaurant la palette du goût">
                         <p class="restaurant__list__card__image__new">Nouveau</p>
                     </figure>
                     <div class="restaurant__list__card__body">
@@ -76,7 +78,7 @@
                 <!--Card 2-->
                 <a href="html/la-note-enchantee.html" class="restaurant__list__card">
                     <figure class="restaurant__list__card__image">
-                        <img src="img/restaurants/a-la-francaise.jpg" alt="Restaurant la note enchantée">
+                        <img class="restaurant__list__card__image__img" src="img/restaurants/la-note-enchantee.jpg" alt="Restaurant la note enchantée">
                         <p class="restaurant__list__card__image__new">Nouveau</p>
                     </figure>
                     <div class="restaurant__list__card__body">
@@ -90,8 +92,7 @@
                 <!--Card 3-->
                 <a href="html/a-la-francaise.html" class="restaurant__list__card">
                     <figure class="restaurant__list__card__image">
-                        <img src="img/restaurants/a-la-francaise.jpg" alt="Restaurant à la française">
-                        <p class="restaurant__list__card__image__new">Nouveau</p>
+                        <img class="restaurant__list__card__image__img" src="img/restaurants/a-la-francaise.jpg" alt="Restaurant à la française">
                     </figure>
                     <div class="restaurant__list__card__body">
                         <div class="restaurant__list__card__body__title">
@@ -102,10 +103,9 @@
                     </div>
                 </a>
                 <!--Card 4-->
-                <a href="html/le delice-des-sens.html" class="restaurant__list__card">
+                <a href="html/le-delice-des-sens.html" class="restaurant__list__card">
                     <figure class="restaurant__list__card__image">
-                        <img src="img/restaurants/le-delice-des-sens.jpg" alt="Restaurant le délice des sens">
-                        <p class="restaurant__list__card__image__new">Nouveau</p>
+                        <img class="restaurant__list__card__image__img" src="img/restaurants/le-delice-des-sens.jpg" alt="Restaurant le délice des sens">
                     </figure>
                     <div class="restaurant__list__card__body">
                         <div class="restaurant__list__card__body__title">
