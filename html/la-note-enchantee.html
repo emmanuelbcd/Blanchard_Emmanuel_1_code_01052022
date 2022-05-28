@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS file-->
+    <link rel="stylesheet" href="../css/menu.css">
     <!--FontAwesome-->
-    <script src="https://kit.fontawesome.com/e1b4910b48.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Docment title-->
     <title>La note enchantée - Ohmyfood!</title>
 </head>
 <body>
     <!--Header-->
     <header class="header__heading">
-        <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a> 
+        <a href="../index.html" class="header__heading__nav">
+            <i class="fa-solid fa-arrow-left header__heading__nav__icon"></i>
+        </a> 
         <p class="header__heading__logo">
-            <img src="../img/logo/ohmyfood.png" alt="Logo de Ohmyfood!">
+            <img src="../img/logo/ohmyfood.png" alt="Logo de Ohmyfood!" class="header__heading__logo__img">
         </p>
     </header>
     <!--Fin du Header-->   
@@ -23,11 +27,13 @@
     <main class="mainblock">
         <!--Oversized banner image-->
         <figure class="menu__hero">
-            <img src="../img/restaurants/la-note-enchantee.jpg" alt="photo d'une assiette au restaurant la note enchantée" class="menu__hero__image">
+            <img src="../img/restaurants/la-note-enchantee.jpg" alt="photo d'une assiette au restaurant à la note enchantée" class="menu__hero__image">
         </figure> 
         <!--Restaurant menu-->
-        <h1>La note enchantée</h1>
-        <i class="fal fa-heart"></i>
+        <div class="menu__header">
+            <h1 class="menu__header__title">La note enchantée</h1>
+            <i class="fa-regular fa-heart menu__header__icon"></i>
+        </div>
         <!--Menu-->
         <div class="menublock">
             <!--Sarter-->
@@ -37,14 +43,11 @@
                 <!--Starter 1-->
                 <div class="menublock__card menublock__card--1">
                     <div class="menublock__card__content">
-                        <h3 class="menublock__card__content__title">Ravioles de foie gras </h3>
+                        <h3 class="menublock__card__content__title">Ravioles de foie gras</h3>
                         <p class="menublock__card__content__list">Accompagnés de leur crème à la truffe</p>
                     </div>
                     <div class="menublock__card--translate">
                         <p class="price">25€</p>
-                        <div class="checkbox">
-                            <i class="far fa-check-circle"></i>
-                        </div>
                     </div>
                 </div>  
                 <!--Starter 2-->
@@ -55,9 +58,6 @@
                     </div>
                     <div class="menublock__card--translate">
                         <p class="price">35€</p>
-                        <div class="checkbox">
-                            <i class="far fa-check-circle"></i>
-                        </div>
                     </div>
                 </div> 
                 <!--Starter 3-->
@@ -68,24 +68,18 @@
                     </div>
                     <div class="menublock__card--translate">
                         <p class="price">20€</p>
-                        <div class="checkbox">
-                            <i class="far fa-check-circle"></i>
-                        </div>
                     </div>
                 </div> 
                 <!--Starter 4-->
-                <div class="menublock__card menublock__card--4">
+                <div class="menublock__card menublock__card--1">
                     <div class="menublock__card__content">
                         <h3 class="menublock__card__content__title">Foie gras de canard cuit entier</h3>
                         <p class="menublock__card__content__list">Confiture de figue et pain toasté</p>
                     </div>
                     <div class="menublock__card--translate">
                         <p class="price">35€</p>
-                        <div class="checkbox">
-                            <i class="far fa-check-circle"></i>
-                        </div>
                     </div>
-                </div>  
+                </div> 
             </section>
             <!--Dish-->
             <section class="menusection">
@@ -99,9 +93,6 @@
                     </div>
                     <div class="menublock__card--translate">
                         <p class="price">40€</p>
-                        <div class="checkbox">
-                            <i class="far fa-check-circle"></i>
-                        </div>
                     </div>
                 </div>  
                 <!--Dish 2-->
@@ -112,22 +103,16 @@
                     </div>
                     <div class="menublock__card--translate">
                         <p class="price">35€</p>
-                        <div class="checkbox">
-                            <i class="far fa-check-circle"></i>
-                        </div>
                     </div>
                 </div> 
                 <!--Dish 3-->
                 <div class="menublock__card menublock__card--1">
                     <div class="menublock__card__content">
-                        <h3 class="menublock__card__content__title">Mijoté de queue de boeuf </h3>
+                        <h3 class="menublock__card__content__title">Mijoté de queue de boeuf</h3>
                         <p class="menublock__card__content__list">Et riz sauvage aux zestes de citron</p>
                     </div>
                     <div class="menublock__card--translate">
                         <p class="price">44€</p>
-                        <div class="checkbox">
-                            <i class="far fa-check-circle"></i>
-                        </div>
                     </div>
                 </div> 
             </section>
@@ -143,22 +128,16 @@
                     </div>
                     <div class="menublock__card--translate">
                         <p class="price">18€</p>
-                        <div class="checkbox">
-                            <i class="far fa-check-circle"></i>
-                        </div>
                     </div>
                 </div>  
                 <!--Dessert 2-->
                 <div class="menublock__card menublock__card--1">
                     <div class="menublock__card__content">
-                        <h3 class="menublock__card__content__title">Baba au rhum revisité </h3>
+                        <h3 class="menublock__card__content__title">Baba au rhum revisité</h3>
                         <p class="menublock__card__content__list">Avec son coulis de citron</p>
                     </div>
                     <div class="menublock__card--translate">
                         <p class="price">22€</p>
-                        <div class="checkbox">
-                            <i class="far fa-check-circle"></i>
-                        </div>
                     </div>
                 </div> 
                 <!--dessert 3-->
@@ -169,38 +148,44 @@
                     </div>
                     <div class="menublock__card--translate">
                         <p class="price">23€</p>
-                        <div class="checkbox">
-                            <i class="far fa-check-circle"></i>
-                        </div>
                     </div>
                 </div> 
             </section>
+        </div>
+        <div class="orderblock">
+            <a href="#" class="order__btn">Commander</a>
         </div>
     </main>
     <!--Fin du Main-->
     <!--Footer-->
     <footer class="footer">
         <p class="footer__logo">
-            <img src="../img/logo/ohmyfood.png" alt="Logo de Ohmyfood!">
+            <img class="footer__logo__img" src="../img/logo/ohmyfood.png" alt="Logo de Ohmyfood!">
         </p>
-        <!--Footer link 1-->
-        <a href="#" class="footer__link">
-            <i class="fa-solid fa-utensils"></i>
-            <p>Proposer un restaurant</p>
-        </a>
-        <!--Footer link 2-->
-        <a href="#" class="footer__link">
-            <i class="fal fa-hands-helping"></i>
-            <p>Devenir partenaire</p>
-        </a>
-        <!--Footer link 3-->
-        <a href="#" class="footer__link">
-            Mentions légales
-        </a>
-        <!--Footer link 4 - Mailto-->
-        <a href="mailto:contact@ohmyfood.com" class="footer__link">
-            Contact
-        </a>
+        <ul class="footer__block">
+            <!--Footer link 1-->
+            <li class="footer__block__list">
+                <a href="#" class="footer__link">
+                    <i class="fa-solid fa-utensils footer__link__icon"></i>
+                    <p class="footer__link__text">Proposer un restaurant</p>
+                </a>
+            </li>
+             <!--Footer link 2-->
+             <li class="footer__block__list">
+                <a href="#" class="footer__link">
+                    <i class="fa-solid fa-handshake-angle footer__link__icon footer__link__icon--reduce"></i>
+                    <p class="footer__link__text">Devenir partenaire</p>
+                </a>
+            </li>
+            <!--Footer link 3-->
+            <li class="footer__block__list">
+                <a href="#" class="footer__link">Mentions légales</a>
+            </li>
+            <!--Footer link 4 - Mailto-->
+            <li class="footer__block__list">
+                <a href="mailto:contact@ohmyfood.com" class="footer__link">Contact</a>
+            </li>
+        </ul>
     </footer>
     <!--Fin du Footer-->
 </body>
