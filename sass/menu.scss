@@ -373,6 +373,7 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: relative;
 }
 
 .header__heading__logo {
@@ -385,8 +386,13 @@ a {
     }
 }
 
-/** Main **/
+.header__heading__nav {
+    position: absolute;
+    padding-left: 30px;
+    font-size: 18px;
+}
 
+/** Main **/
 
 
 .menu__hero {
@@ -411,7 +417,7 @@ a {
     justify-content: space-between;
     align-items: baseline;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 35px;
     padding-top: 20px;
     border-radius: 35px 35px 0px 0px;
     background-color: #f6f6f6;
@@ -424,7 +430,7 @@ a {
     }
 
     &__icon {
-        font-size: 20px;
+        font-size: 24px;
     }
 }
 
@@ -470,6 +476,17 @@ a {
 }
 
 .menublock__card__content__list {
+    margin: 0px 10px 10px 10px;
+}
+
+.menublock__card--translate {
+    display: flex;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     margin: 0px 10px 10px 10px;
 }
 
