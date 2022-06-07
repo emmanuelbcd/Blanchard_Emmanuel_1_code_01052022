@@ -23,10 +23,14 @@
     <!--Main-->
     <main class="mainblock">
         <!--Section location-->
-        <div class="location">
-            <i class="fa-solid fa-location-dot location__icon"></i>
-            <p class="location__text">Paris, Belleville</p>
-        </div>
+        <form class="location" method="post" action="traitement.php">
+            <div class="location__place">
+                <i class="fa-solid fa-location-dot location__icon"></i>
+            </div>
+            <div class="location__search">
+                <input class="location__search__input" type="search" placeholder="Paris, Belleville">
+            </div>
+        </form>
         <!--Section choice-->
         <section class="choice">
             <h2 class="choice__h2">Réservez le menu qui vous convient</h2>
@@ -72,7 +76,10 @@
                             <h4 class="restaurant__list__card__body__title__h4">La palette du goût</h4>
                             <p class="restaurant__list__card__body__title__location">Ménilmontant</p>
                         </div>
-                        <i class="fa-regular fa-heart restaurant__list__card__body__title__icon"></i>
+                        <div class="restaurant__list__card__like">
+                            <i class="fa-regular fa-heart restaurant__list__card__like--empty"></i>
+                            <i class="fa-solid fa-heart restaurant__list__card__like--full"></i>
+                        </div>
                     </div>
                 </a>
                 <!--Card 2-->
@@ -86,7 +93,10 @@
                             <h4 class="restaurant__list__card__body__title__h4">La note enchantée</h4>
                             <p class="restaurant__list__card__body__title__location">Charonne</p>
                         </div>
-                        <i class="fa-regular fa-heart restaurant__list__card__body__title__icon"></i>
+                        <div class="restaurant__list__card__like">
+                            <i class="fa-regular fa-heart restaurant__list__card__like--empty"></i>
+                            <i class="fa-solid fa-heart restaurant__list__card__like--full"></i>
+                        </div>
                     </div>
                 </a>
                 <!--Card 3-->
@@ -99,7 +109,10 @@
                             <h4 class="restaurant__list__card__body__title__h4">A la française</h4>
                             <p class="restaurant__list__card__body__title__location">Cité Rouge</p>
                         </div>
-                        <i class="fa-regular fa-heart restaurant__list__card__body__title__icon"></i>
+                        <div class="restaurant__list__card__like">
+                         <i class="fa-regular fa-heart restaurant__list__card__like--empty"></i>
+                            <i class="fa-solid fa-heart restaurant__list__card__like--full"></i>
+                        </div>
                     </div>
                 </a>
                 <!--Card 4-->
@@ -112,7 +125,10 @@
                             <h4 class="restaurant__list__card__body__title__h4">La délice des sens</h4>
                             <p class="restaurant__list__card__body__title__location">Folie-Méricourt</p>
                         </div>
-                        <i class="fa-regular fa-heart restaurant__list__card__body__title__icon"></i>
+                        <div class="restaurant__list__card__like">
+                            <i class="fa-regular fa-heart restaurant__list__card__like--empty"></i>
+                            <i class="fa-solid fa-heart restaurant__list__card__like--full"></i>
+                        </div>
                     </div>
                 </a>
             </div>
