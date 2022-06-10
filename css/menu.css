@@ -453,23 +453,45 @@ a {
   background-color: #fff;
   box-shadow: 0px 2px 12px #d2d2d2;
   border-radius: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menublock__card:hover > .menublock__card--translate {
+  margin-right: 0px;
+}
+
+.menublock__card:hover > .fa-circle-check {
+  transform: rotate(360deg);
+  transition-duration: 2s;
+  transition-timing-function: ease;
 }
 
 .menublock__card__content {
-  display: flex;
   flex-direction: column;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .menublock__card__content__title {
-  margin: 16px 10px 7px 10px;
+  margin: 16px 0px 7px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .menublock__card__content__list {
-  margin: 0px 10px 10px 10px;
+  margin: 0px 0px 10px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .menublock__card--translate {
   display: flex;
+  margin-right: -60px;
+  transition: all 500ms ease;
 }
 
 .price {
@@ -477,6 +499,19 @@ a {
   justify-content: flex-end;
   align-items: flex-end;
   margin: 0px 10px 10px 10px;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  width: 60px;
+  font-size: 21px;
+}
+
+.checkbox__icon {
+  color: #fff;
 }
 
 /** Menu button**/
