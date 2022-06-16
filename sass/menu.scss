@@ -349,8 +349,18 @@
   }
   
 /**
-* Main.scss
+* Menu.scss
 **/
+
+/** Fonts **/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+}
 
 /** box sizing **/
 
@@ -442,10 +452,33 @@ a {
     }
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .menusection {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    animation: appear 600ms;
+    animation-fill-mode: both;
+}
+
+.menusection--effect01 {
+  animation-delay: 300ms;
+}
+
+.menusection--effect02 {
+  animation-delay: 450ms;
+}
+
+.menusection--effect03 {
+  animation-delay: 600ms;
 }
 
 .menusection__h2 {
@@ -479,13 +512,11 @@ a {
 
     &:hover > .menublock__card--translate {
       margin-right: 0px;
-    }
-}
 
-.menublock__card:hover > .fa-circle-check {
-  transform: rotate(360deg);
-  transition-duration: 2s;
-  transition-timing-function: ease;
+      & .checkbox__icon {
+        transform: rotate(360deg);
+      }
+    }
 }
 
 .menublock__card__content {
@@ -513,6 +544,12 @@ a {
     display: flex;
     margin-right: -60px;
     transition: all 500ms ease;
+
+    & .checkbox__icon {
+      transform: rotate(0deg);
+      transition-property: transform;
+      transition-duration: 500ms;
+    }
 }
 
 .price {
@@ -520,6 +557,7 @@ a {
     justify-content: flex-end;
     align-items: flex-end;
     margin: 0px 10px 10px 10px;
+    font-weight: 700;
 }
 
 .checkbox {
@@ -534,8 +572,6 @@ a {
 .checkbox__icon {
   color: #fff;
 }
-
-
 
 /** Menu button**/
 
@@ -562,7 +598,7 @@ a {
     width: 200px;
     height: 50px;
     border-radius: 25px;
-    box-shadow: 0px 2px 14px #afafaf;
+    box-shadow: 0px 2px 14px #b1b1b1;
   }
 
 /** Footer **/

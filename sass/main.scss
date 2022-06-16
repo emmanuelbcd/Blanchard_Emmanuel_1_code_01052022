@@ -352,6 +352,16 @@
 * Main.scss
 **/
 
+/** Fonts **/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+}
+
 /** box sizing **/
 
 * {
@@ -411,7 +421,7 @@ input[type=search] {
   padding: 12px 12px 12px 12px;
   border: #eaeaea;
   background-color: #eaeaea;
-  width: 140px;
+  width: 150px;
 }
 
 input::placeholder {
@@ -434,13 +444,13 @@ input::placeholder {
 
     &__h2 {
       margin-bottom: 0px;
-      padding: 0px 40px 0px 40px;
+      padding: 0px 30px 0px 30px;
       text-align: center;
     }
 
     &__text {
       margin-bottom: 20px;
-      padding: 0px 40px 0px 40px;
+      padding: 0px 20px 0px 20px;
       text-align: center;
     }
 }
@@ -455,7 +465,7 @@ input::placeholder {
   width: 200px;
   height: 50px;
   border-radius: 25px;
-  box-shadow: 0px 2px 14px #afafaf;
+  box-shadow: 0px 2px 12px #b1b1b1;
 }
 
 /** section working **/
@@ -503,12 +513,13 @@ input::placeholder {
 
     &__icon {
       font-size: 20px;
-      margin-left: 40px;
+      margin-left: 35px;
       color: #7e7e7e;
     }
 
     &__txt {
-      margin-left: 30px;
+      margin-left: 16px;
+      font-weight: 700;
     }
 }
 
@@ -550,6 +561,10 @@ input::placeholder {
     box-shadow: 0px 2px 12px #d2d2d2;
     border-radius: 15px;
     width: 100%;
+
+    &:hover {
+      box-shadow: 0px 4px 16px #dcdcdc;
+    }
 }
 
 .restaurant__list__card__image {
@@ -592,6 +607,7 @@ input::placeholder {
 
 .restaurant__list__card__body__title__h4 {
   margin: 16px 10px 7px 10px;
+  font-weight: 700;
 }
 
 .restaurant__list__card__body__title__location {
@@ -671,7 +687,7 @@ input::placeholder {
 }
 
 .footer__link__icon {
-  padding-right: 20px;
+  padding-right: 12px;
 }
 
 .footer__link__icon--reduce {
