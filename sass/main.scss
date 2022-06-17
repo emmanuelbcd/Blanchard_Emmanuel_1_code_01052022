@@ -635,13 +635,6 @@ input::placeholder {
     transition-duration: 500ms;
 
     &:hover {
-      /**background: linear-gradient(360deg, #FF79DA, #9356DC);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      opacity: 1;
-      animation-duration: 500ms;
-      animation-timing-function: ease-in-out;**/
       opacity: 1;
     }
   }

@@ -447,9 +447,35 @@ a {
         font-size: 26px;
     }
 
-    &__icon {
+    /**&__icon {
         font-size: 24px;
+    }**/
+}
+
+.menu__header__like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 28px;
+  position: relative;
+
+  &--full {
+    
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    background: linear-gradient(360deg, #FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+    transition-duration: 500ms;
+
+    &:hover {
+      opacity: 1;
     }
+  }
 }
 
 @keyframes appear {
