@@ -423,13 +423,36 @@ a {
   position: absolute;
   width: 100%;
   top: 260px;
+  /**&__icon {
+      font-size: 24px;
+  }**/
 }
 .menu__header__title {
   margin-top: 0px;
   font-size: 26px;
 }
-.menu__header__icon {
-  font-size: 24px;
+
+.menu__header__like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 28px;
+  position: relative;
+}
+.menu__header__like--full {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  background: linear-gradient(360deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition-duration: 500ms;
+}
+.menu__header__like--full:hover {
+  opacity: 1;
 }
 
 @keyframes appear {
