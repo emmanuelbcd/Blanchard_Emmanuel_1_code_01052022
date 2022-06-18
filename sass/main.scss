@@ -349,6 +349,71 @@
   }
   
 /**
+Loader
+**/
+
+@keyframes loader-disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes dot-fall {
+  0% {
+    transform: translateY(-600px);
+  }
+  90% {
+    transform: translateY(-5px) scale(1);
+  }
+  100% {
+    transform: translateY(0px) scale(1.2, 0.8);
+  }
+}
+
+@keyframes dot-mouv {
+  0% {
+    transform: translateY(0px) scale(1.2, 0.8);
+    animation-timing-function: cubic-bezier(0.39, 0.66, 0.45, 0.95);
+  }
+  50% {
+    transform: translateY(-30px);
+    animation-timing-function: cubic-bezier(0.72, 0.13, 0.89, 0.6);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  animation: loader-disappear 500ms 2500ms forwards;
+}
+.loading__dot-1 {
+  color: #9356DC;
+  animation: dot-fall 500ms both, dot-mouv 1s 500ms infinite;
+}
+.loading__dot-2 {
+  color: #FF79DA;
+  animation: dot-fall 500ms 200ms both, dot-mouv 1s 700ms infinite;
+}
+.loading__dot-3 {
+  color: #99E2D0;
+  animation: dot-fall 500ms 400ms both, dot-mouv 1s 900ms infinite;
+}
+
+/**
 * Main.scss
 **/
 
@@ -455,17 +520,27 @@ input::placeholder {
     }
 }
 
-.choice__btn {
+@mixin bck-img {
+  background-image: linear-gradient(180deg, #FF79DA, #9356DC);
+}
+
+.btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  @include bck-img();
   color: #fff;
   width: 200px;
   height: 50px;
   border-radius: 25px;
   box-shadow: 0px 2px 12px #b1b1b1;
+  border: 0;
+  
+  &:hover {
+   filter: brightness(110%); 
+   box-shadow: 0px 2px 18px #b1b1b1;
+  }
 }
 
 /** section working **/
