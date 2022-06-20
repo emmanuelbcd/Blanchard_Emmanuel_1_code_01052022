@@ -719,6 +719,8 @@ input::placeholder {
 /** Footer **/
 
 .footer {
+  display: flex;
+  flex-direction: column;
   background-color: #353535;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -744,8 +746,11 @@ input::placeholder {
 }
 
 .footer__block {
+  display: flex;
+  flex-direction: column;
   padding-left: 20px;
 }
+
 .footer__link {
   color: #fff;
   display: flex;
@@ -764,4 +769,130 @@ input::placeholder {
 
 .footer__link__text {
   margin:0px;
+}
+
+/** Media Tablets from 768px to 1023px **/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header__heading__logo {
+
+    &__img {
+        width: 23%;
+    }
+  }
+
+  .working__title {
+    text-align: center;
+    font-size: 24px;
+  } 
+
+  .working__step {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+  }
+  
+  .working__step__card {
+    width: 45%;
+  }
+
+  .restaurant__h3 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .restaurant__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  
+  .restaurant__list__card {
+    width: 46%;
+  }
+
+  .footer {
+    align-items: center;
+  }
+
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer__logo__img {
+    width: 18%;
+  }
+
+  .footer__block {
+    align-items: center;
+  }
+
+} 
+  
+
+/** Media PC from 1024px to 1280px **/
+
+@media screen and (min-width: 1024px) {
+
+  .header__heading__logo {
+
+    &__img {
+        width: 17%;
+    }
+  }
+  
+  .working__title {
+    text-align: center;
+    font-size: 24px;
+  } 
+  
+  .working__step {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .working__step__card {
+    width: 30%;
+  }
+  
+  .restaurant__h3 {
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .restaurant__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .restaurant__list__card {
+    width: 32%;
+  }
+  
+  .footer {
+    flex-direction: row;
+  }
+
+  .footer__logo {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0px;
+    width: 20%;
+  }
+
+  .footer__logo__img {
+    width: 70%;
+}
+
+  .footer__block {
+    flex-direction: row;
+    margin-top: 0px;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+
 }
