@@ -684,6 +684,9 @@ input::placeholder {
 }
 
 .footer__block {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
   margin-bottom: 0px;
 }
 
@@ -700,12 +703,6 @@ input::placeholder {
   width: 30%;
   filter: invert(100%);
   margin-top: 0px;
-}
-
-.footer__block {
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
 }
 
 .footer__link {
