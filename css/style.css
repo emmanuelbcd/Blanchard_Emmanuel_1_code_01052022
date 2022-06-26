@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -337,6 +341,14 @@ template {
   display: none;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
 @keyframes loader-disappear {
   0% {
     opacity: 1;
@@ -398,18 +410,6 @@ template {
   animation: dot-fall 500ms 400ms both, dot-mouv 1s 900ms infinite;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-h1 {
-  font-family: "Shrikhand", cursive;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 a {
   text-decoration: none;
   color: #000;
@@ -436,6 +436,105 @@ a {
   .header__heading__logo__img {
     width: 17%;
   }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+  }
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer__block {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer__block {
+    flex-direction: row;
+    margin-top: 0px;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+}
+
+.footer__block__list {
+  list-style-type: none;
+}
+
+.footer__logo {
+  padding-left: 20px;
+  margin-top: 0px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer__logo {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0px;
+    width: 20%;
+  }
+}
+
+.footer__logo__img {
+  width: 30%;
+  filter: invert(100%);
+  margin-top: 0px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer__logo__img {
+    width: 18%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer__logo__img {
+    width: 70%;
+  }
+}
+
+.footer__link {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding-bottom: 10px;
+}
+
+.footer__link__icon {
+  padding-right: 12px;
+}
+
+.footer__link__icon--reduce {
+  font-size: 11px;
+}
+
+.footer__link__text {
+  margin: 0px;
 }
 
 .location {
@@ -736,105 +835,6 @@ input::placeholder {
 }
 .restaurant__list__card__like--full:hover {
   opacity: 1;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #353535;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .footer {
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer {
-    flex-direction: row;
-  }
-}
-
-.footer__block {
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  margin-bottom: 0px;
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .footer__block {
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer__block {
-    flex-direction: row;
-    margin-top: 0px;
-    width: 100%;
-    justify-content: flex-start;
-    gap: 30px;
-  }
-}
-
-.footer__block__list {
-  list-style-type: none;
-}
-
-.footer__logo {
-  padding-left: 20px;
-  margin-top: 0px;
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .footer__logo {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer__logo {
-    display: flex;
-    align-items: baseline;
-    margin-bottom: 0px;
-    width: 20%;
-  }
-}
-
-.footer__logo__img {
-  width: 30%;
-  filter: invert(100%);
-  margin-top: 0px;
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .footer__logo__img {
-    width: 18%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer__logo__img {
-    width: 70%;
-  }
-}
-
-.footer__link {
-  color: #fff;
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  padding-bottom: 10px;
-}
-
-.footer__link__icon {
-  padding-right: 12px;
-}
-
-.footer__link__icon--reduce {
-  font-size: 11px;
-}
-
-.footer__link__text {
-  margin: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
