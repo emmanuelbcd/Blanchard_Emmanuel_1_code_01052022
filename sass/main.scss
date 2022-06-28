@@ -1,5 +1,6 @@
 //Utils
 @import "utils/variables";
+@import "utils/mixin";
 
 //Base
 @import "base/box-sizing";
@@ -9,6 +10,7 @@
 //Components
 @import "components/loader";
 @import "components/links";
+@import "components/button";
 
 //layout
 @import "layouts/header-index";

@@ -1,0 +1,211 @@
+.menu__hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+    height: 240px;
+    position: relative;
+}
+
+.menu__hero__image {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    min-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.menu__header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    border-radius: 35px 35px 0px 0px;
+    background-color: #f6f6f6;
+    position: absolute;
+    width: 100%;
+    top: 260px;
+
+    &__title {
+        margin-top: 0px;
+        font-size: 26px;
+    }
+
+}
+
+.menu__header__like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 28px;
+  position: relative;
+
+  &--full {
+    
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    background: linear-gradient(360deg, $secondary-color, $primary-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+    transition-duration: 500ms;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.menusection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: appear 600ms;
+    animation-fill-mode: both;
+
+    @media screen and (min-width: 1024px) {
+        flex-direction: column;
+        gap: 20px;
+        width: 32%;
+    }
+}
+
+.menusection--effect01 {
+  animation-delay: 300ms;
+}
+
+.menusection--effect02 {
+  animation-delay: 450ms;
+}
+
+.menusection--effect03 {
+  animation-delay: 600ms;
+}
+
+.menusection__h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid $tertiary-color;
+    width: 40px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+/** Menu block card**/
+
+.menublock {
+  display: flex;
+  flex-direction: column;
+    background-color: #f6f6f6;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+
+  @media screen and (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+  }
+}
+
+.menublock__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 2px 12px #d2d2d2;
+    border-radius: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    &:hover > .menublock__card--translate {
+      margin-right: 0px;
+
+      & .checkbox__icon {
+        transform: rotate(360deg);
+      }
+    }
+}
+
+.menublock__card__content {
+    flex-direction: column;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menublock__card__content__title {
+    margin: 16px 0px 7px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menublock__card__content__list {
+    margin: 0px 0px 10px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menublock__card--translate {
+    display: flex;
+    margin-right: -60px;
+    transition: all 500ms ease;
+
+    & .checkbox__icon {
+      transform: rotate(0deg);
+      transition-property: transform;
+      transition-duration: 500ms;
+    }
+}
+
+.price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0px 10px 10px 10px;
+    font-weight: 700;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $tertiary-color;
+  width: 60px;
+  font-size: 21px;
+}
+
+.checkbox__icon {
+  color: #fff;
+}
+
+/** Menu button**/
+
+.orderblock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #f6f6f6;
+}
+
+
